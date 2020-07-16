@@ -1,0 +1,80 @@
+Different array methods:
+
+(i) join() - Used to join array elements into a string.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+Result:
+Banana * Orange * Apple * Mango
+
+(ii) toString() - Used to convert array to a string of array values.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+Result:
+Banana,Orange,Apple,Mango
+
+(iii) pop() - Removes last element of the array.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();              // Removes the last element ("Mango") from fruits
+
+
+(iv) push() - Adds a new element from the end of the array.
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
+
+(v) shift() - This removes the first element of the array and shifts all
+                other elements to a lower index.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();            // Removes the first element "Banana" from fruits
+
+(vi) length - Returns the length of the array.
+
+Returns the length for example,
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.length returns 4.
+
+(vii) delete - Used to delete a specific element in the array using its index.
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];           // Changes the first element in fruits to undefined
+
+
+(viii) concat() - Used to merge two array and return a new array.
+
+Example (Merging Two Arrays)
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var myChildren = myGirls.concat(myBoys);   // Concatenates (joins) myGirls and myBoys
+
+
+String methods:
+
+(i) length - returns the length of the string.
+
+Example
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+(ii) indexOf() -  returns the index
+         of (the position of) the first occurrence of a specified text in a string.
+
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+
+(iii) search() - This method searches
+                 a string for a specified value and returns the position of the match.
+
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+
